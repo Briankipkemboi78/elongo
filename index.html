@@ -4,57 +4,65 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         
-        <title>Elongo Pastrolists Initiative</title>
+        <title>Elongo Pastoralists Initiative</title>
         <link rel="stylesheet" href="./css/style.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" 
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" 
         crossorigin="anonymous">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
         <script src="script.js" defer></script>
     </head>
     <body>
-        <!-----Home setcion start-------->
+        <!-----Home section start-------->
         <div class="fullContainer banner" id="homeSection">
             <header>
                 <div class="container">
-                    <div class="logo">
-                        <a href="#homeSection"><img src="images/logo.png" alt="EPI"></a>
-                    </div>
-                    <nav>
-                        <ul>
-                            <li>
-                                <a href="#homeSection">Home</a>
-                            </li>
-                            <li>
-                                <a href="#aboutSection">About Us</a>
-                            </li>
-                            <li>
-                                <a href="#programsSection">Programms</a>
-                            </li>
-                            <li>
-                                <a href="#projectSection">Blogs</a>
-                            </li>
-                            <li>
-                                <a href="#gallerySection">Gallery</a>
-                            </li>
-                            <li>
-                                <a href="#contactSection">Contact Us</a>
-                            </li>
-                        
-                        </ul>
+                <nav class="navbar navbar-expand-md">
+                   
+                    <a href="" class="navbar-brand fs-3 ms-3"><img src="images/logo.png" alt="EPI"></a>
+                
+                <button class="navbar-toggler me-3 text-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#btn">
+                <i class='bx bx-menu bx-md'></i>
+            </button>
+            <div class=" collapse navbar-collapse" id="btn">
+                <ul class="navbar-nav ms-auto">
+                    <li class=" nav-item ">
+                        <a href="#homeSection" class=" nav-link mx-3 text-white fs-5">Home</a>
+                    </li>
+                    <li class=" nav-item ">
+                        <a href="#aboutSection" class=" nav-link mx-3 text-white fs-5">About Us</a>
+                    </li>
+                    <li class=" nav-item ">
+                        <a href="#programsSection" class=" nav-link mx-3 text-white fs-5">Programs</a>
+                    </li>
+                    <li class=" nav-item ">
+                        <a href="#projectSection" class=" nav-link mx-3 text-white fs-5">Blogs</a>
+                    </li>
+                    <li class=" nav-item ">
+                        <a href="#gallerySection" class=" nav-link mx-3 text-white fs-5">Gallery</a>
+                    </li class=" nav-item ">
+                    <li class=" nav-item ">
+                        <a href="#contactSection" class=" nav-link mx-3 text-white fs-5">Contact Us</a>
+                    </li>
+                
+                </ul>
 
-                    </nav>
-                </div>
+            </div>
+        </nav>
+    </div>
             </header>
             <!----------Header End------->
             <div class="container">
-                <h1><span>EPI </span>elongo pastrolist initiative</h1>
+                <h1><span>EPI </span>Elongo Pastoralists Initiative</h1>
                 <p>
                     
                     Introducing modern agriculture to pastoralist communities. Main purpose is to transform 
                     smallholder farmers in pastoral communities into modern farmers to increase crop and 
                     livestock productivity in terms of profitability and resilience to ensure food security. 
-                    Together, we can help pastrolists reduce poverty, 
+                    Together, we can help pastoralist reduce poverty, 
                     give access to education, provide ways to conserve water, and support environmental conservation.
                 </p>
                 <!--<button>Start With A little</button>-->
@@ -66,12 +74,12 @@
         <section class="fullContainer" id="aboutSection">
             <div class="container">
                 <h2 class="sectionTitle">About Us</h2>
+                <h4 class="sectionsub_Title">EPI</h4>
                 <p>
-                    Elongo Pastrolists Initiative was founded in XXXX. We are dedicated 
-                    to supporting pastrolists and fostering sustainable livelihoods for
-                    communities that rely on livestock. We understand the unique challenges 
-                    faced by pastrolists and strive to empower them with knowledge,resources,
-                    and opportunities needed to thrive in ever-changing world. 
+                    The Elongo Pastoralists Initiative was founded in 2016 with the aim of supporting pastoralists and fostering sustainable 
+                    livelihoods for communities dependent on livestock. We acknowledge the unique challenges faced by 
+                    pastoralists and strive to offer them the necessary information, opportunities, 
+                    and resources to thrive in an ever-evolving environment. 
                 </p>
                 <h3 class="sectionsubTitle">Our Mission</h3>
                 <p>
@@ -82,16 +90,37 @@
                     to our global society. 
                 </p>
                 <h3 class="sectionsubTitle">What We Do</h3>
+                <p>
+                    A variety of initiatives are involved in helping pastoralists improve their standard of living. 
+                    First and foremost, it is crucial to implement capacity-building and training programs that address 
+                    issues like better methods for managing livestock, financial and business management, marketing tactics, 
+                    and climate change adaptation. Second, it is important to make it easier for people to access resources 
+                    like veterinary care, animal healthcare facilities, water resources by building or improving water points, 
+                    grazing reserves, and credit and microfinance services. Thirdly, it's critical to diversify sources of income
+                     by promoting alternative sources of revenue and offering job training in industries other than cattle, such 
+                     as agriculture, beekeeping, or handcraft manufacturing. Market development activities can assist group marketing 
+                     initiatives, add value through processing and packaging facilities, and conduct market research. 
+                    Infrastructure development includes enhancing the network of roads, storage spaces, and communications facilities. 
+                    In order to defend the rights of pastoralists, advocacy is crucial.
+                </p>
+                <!--
                     <ul>
-                        <li>We offer Scholarships and learning materials to pastoral children in school.</li>
+                        <li>Conduct workshops on business and financial management, marketing strategies, 
+                            and value addition to livestock products.</li>
+                        <li>Encourage and support the establishment of alternative income-generating activities, 
+                            such as small-scale agriculture, beekeeping, or handicraft production.</li>
+                        <li>Facilitate access to veterinary services and animal healthcare facilities.</li>
+                        <li>Facilitate access to vocational training and promote the development of skills 
+                            that can be applied outside the livestock sector, such as entrepreneurship or trade.</li>
                         <li>We build capacity of youth and women on enterpreneurship skills like beadwork,
                             leather work and bee keeping.
                         </li>
+                        
                         <li>As an organization, we strive to improve access to water through drilling of
                             boreholes, construction of water pans/dams as well as water harvesting.
                         </li>
                         <li>We Advocate for environmental conservation in pastoral arears and plant trees.</li>
-                    </ul> 
+                    </ul> -->
                 </div>
 
             </div>
@@ -102,6 +131,7 @@
         <section class="programs" id="programsSection">
             <div class="container">
                 <h2 class="sectionTitle">Programs</h2>
+                <h4 class="sectionsub_Title">EPI</h4>
                 <!-------Box Container start-->
                 <div class="boxContainer">
                     <!---------Box start------------->
@@ -163,7 +193,7 @@
                         <p>Kajiado County has been identified as the highest in tomato production in Kenya. It's due 
                             to the department became supportive to the individual and women groups of tomato growers in Kajiado County.
                             The region interms of agricultural belt produces  tomatoes worth Ksh 1.3 Billions between 2019 and 2021, and due 
-                            to that it has emerged Kajiado County to become the largests commercial of tomato producer in Kenya currently.</p>
+                            to that it has emerged Kajiado County to become the largest commercial of tomato producer in Kenya currently.</p>
                     </div>
                     <!---------Box end------------->
                 </div>
@@ -179,6 +209,7 @@
                 Your browser does not support HTML5 video.
             </video>
             <div class="container">
+                <h4 class="sectionsub_Title">EPI</h4>
                 <!--<div class="sectionTitle">Project</div>-->
                 <div class="projectContainer">
                     <h3>
@@ -186,8 +217,9 @@
                         <strong>IMPROVE PRODUCTIVITY </strong>
                     </h3>
                     <P>
-                        Add here relevant information tied to the company. You can mention methods used.
+                        Check out our blogs.
                     </P>
+                    <a href="http://cecjacklinekoin.rf.gd/?i=1">EXPLORE</a>
                 </div>
             </div>
 
@@ -197,6 +229,7 @@
         <section class="gallery" id="gallerySection">
             <div class="container">
                 <div class="sectionTitle">Gallery</div>
+                <h4 class="sectionsub_Title">EPI</h4>
                     <div class="wrapper">
                         <i id="left" class="fa-solid fa-angle-left"></i>
                         <div class="carousel">
@@ -221,37 +254,38 @@
         <section class="contact" id="contactSection">
             <div class="container">
                 <div class="sectionTitle">Get In Touch</div>
+                <h4 class="sectionsub_Title">EPI</h4>
                 <div class="box">
                     <div class="contact form">
                         <h3>Send a Message</h3>
-                        <form>
+                        <form action="https://formsubmit.co/aa7bdee47818a70f445222647a903466" method="POST">
                             <div class="formBox">
                                 <div class="row50">
                                     <div class="inputBox">
                                         <span>First Name</span>
-                                        <input type="text" placeholder="First Name">
+                                        <input type="text" id="fname" name="First Name" placeholder="First Name">
                                     </div>
                                     <div class="inputBox">
                                         <span>Last Name</span>
-                                        <input type="text" placeholder="Last Name">
+                                        <input type="text" id="lname" name="Last Name" placeholder="Last Name">
                                     </div>
                                 </div>
 
                                 <div class="row50">
                                     <div class="inputBox">
                                         <span>Email</span>
-                                        <input type="text" placeholder="example@email.com">
+                                        <input type="email" id="email" name="email" placeholder="example@email.com">
                                     </div>
                                     <div class="inputBox">
-                                        <span>Mobile</span>
-                                        <input type="text" placeholder="mobile no.">
+                                        <span>Mobile</span> 
+                                        <input type="text" id="phone" name="phone" placeholder="mobile no.">
                                     </div>
                                 </div>
 
                                 <div class="row100">
                                     <div class="inputBox">
                                         <span>Message</span>
-                                        <textarea placeholder="Write your message here..."></textarea>
+                                        <textarea id="message" name="message" placeholder="Write your message here..."></textarea>
                                     </div>
                                 </div>
 
@@ -274,7 +308,7 @@
                             </div>
                             <div>
                                 <span><ion-icon name="mail"></ion-icon></span>
-                                <a href="mailto:briankipkemboi47@gmail.com">elongo@gmail.com</a>
+                                <a href="mailto:elongopastrolists@gmail.com">elongopastrolists@gmail.com</a>
                             </div>
                             <div>
                                 <span><ion-icon name="call"></ion-icon></span>
@@ -298,7 +332,7 @@
                     </div>
                 </div>
                 <div class="copyright">
-                    <p>copyright &copy; elongo pastrolists initiative 2023 </p>
+                    <p>copyright &copy; elongo pastoralists initiative 2023 </p>
                 </div>
                 
                 
@@ -309,6 +343,8 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
          integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" 
          crossorigin="anonymous"></script>
+         <script src="https://smtpjs.com/v3/smtp.js"></script>
+
     </body>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

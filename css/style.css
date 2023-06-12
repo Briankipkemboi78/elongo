@@ -80,13 +80,18 @@ p
 
 section
 {
-        padding: 80px 0;
+        padding: 90px 0;
         position: relative;
 }
 
 /*Common style end*/
 
 /* Home Style Start*/
+
+.bg{
+        background-color: rgba(0,0,0,0.6);
+
+}
 header
 {
         width: 100%;
@@ -94,22 +99,22 @@ header
         position: fixed;
         z-index: 2;
 }
-
+/*
 header .container
 {
         display: flex;
         justify-content: space-between;
 }
-
+*/
 header .container .logo
 {
-        padding: 15px 0;
-        height: 75px;
+        padding: 5px 0;
+        height: 10px;
 }
 
 header .container .logo img
 {
-        height: 100%;
+        height: 10%;
 }
 
 header nav ul
@@ -138,7 +143,8 @@ header nav ul li a
 
 header nav ul li a:hover 
 {
-        background-color: var(--themeRed);
+        border-bottom: 3px solid var(--themeRed);
+        transition: ease 0.3s;
 }
 
 .banner
@@ -176,6 +182,7 @@ header nav ul li a:hover
 .banner p
 {
         color: #fdfdfd;
+        font-size: 20px;
         width: 50%;
         text-shadow: 0 0 2px #000;
         margin-top: 10px;
@@ -197,16 +204,41 @@ header nav ul li a:hover
 /* Home Style End*/
 
 /*  About Section start*/
+.sectionhead
+{
+        width: 300px;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 200;
+        margin: 0 auto 50px;
+        position: relative;
+        padding: 0;
+        text-transform: uppercase;
+
+}
 .sectionsubTitle
 {
         width: 300px;
         border-bottom: 1px solid var(--themeRed);
         text-align: center;
         font-size: 2rem;
-        font-weight: 200;
         margin: 0 auto 50px;
+        font-weight: 200;
         position: relative;
         padding: 10px 0;
+        text-transform: uppercase;
+
+}
+
+.sectionsub_Title
+{
+        width: 300px;
+        text-align: center;
+        opacity: .5;
+        font-size: 1.5rem;
+        margin: 0 auto 20px;
+        font-weight: 600;
+        position: relative;
         text-transform: uppercase;
 
 }
@@ -217,10 +249,10 @@ header nav ul li a:hover
 }
 
 
-#aboutSection .container ul
+#aboutSection .container p
 {
         list-style-type: none;
-        font-size: 16px;  
+        font-size: 18px;  
         line-height: 26px;
 }
 
@@ -277,7 +309,7 @@ header nav ul li a:hover
 .programs .boxContainer .box:nth-child(1) .cardImage,
 .programs .boxContainer .box:nth-child(1) .cardImage::after
 {
-        background-image: url("../images/programs/1.jpg");
+        background-image: url("../images/programs/hay.jpg");
 }
 
 .programs .boxContainer .box:nth-child(2) .cardImage,
@@ -367,6 +399,19 @@ header nav ul li a:hover
         font-size: 15px;
         line-height: 20px;
         margin: 10px 0 30px;
+}
+
+.project .projectContainer a
+{
+        font-size: 15px;
+        list-style-type: none;
+        text-decoration: none;
+        border-radius: 5px;
+        color: #fff;
+        background: #e43a47;
+        line-height: 20px;
+        margin: 10px 0 30px;
+        padding: 5px 5px;
 }
 /*  Project Section end*/
 /*  Gallery Section start*/
@@ -465,6 +510,10 @@ header nav ul li a:hover
 /*  Gallery Section end*/
 
 /*Contact us start*/
+.contact{
+        background-color: #f0eeee; 
+
+}
 
 .contact .container
 {
@@ -492,15 +541,12 @@ header nav ul li a:hover
 {
         position: relative;
         display: grid;
-        background: #fff;
         grid-template-columns: 2fr 1fr;
         grid-template-rows: 5fr 4fr;
         grid-template-areas: 
         "form info"
         "form map";
         gap: 20px;
-        row-gap: 20px;
-        column-gap: 20px;
         margin-top: 20px;
 }
 
@@ -572,6 +618,7 @@ header nav ul li a:hover
         background-color: var(--themeRed);
         color: #fff;
         border: none;
+        border-radius: 5px;
         font-size: 1.1rem;
         max-width: 120px;
         font-weight: 500;
@@ -672,8 +719,7 @@ header nav ul li a:hover
 
 /*Footer start*/
 .copyright{
-        width: 100% !important;
-        background-color: #ebe9e9;
+        
         color: var(--themeRed);
         padding: 50px;
         font-size: 14px; 
@@ -723,54 +769,7 @@ header nav ul li a:hover
 }
 
 @media screen and (max-width: 900px) {
-        header nav{
-                position: relative;
-                border: 2px solid #fff;
-                height: 30px;
-                width: 30px;
-                margin-top: 20px;
-                border-radius: 5px;
-
-        }
-
-        header nav:after{
-                top: 17px;
-        }
-
-        header nav:before{
-                top: 7px;
-        }
-
-        header nav:after, 
-        header nav:before{
-                content:"";
-                height: 2px;
-                width: 17px;
-                background-color: #817d7d;
-                display: block;
-                position: absolute;
-                left: 5px;
-        }
-
-        header nav ul{
-                position: absolute;
-                right: -400px;
-                top: 53px;
-                transition: 0.5s;
-        }
-
-        header nav:hover ul{
-                right: 0;
-        }
-
-        header nav ul li{
-                display: block;
-        }
-
-        header nav ul li a {
-                width: 300px;
-                background-color: rgba(0,0,0,0.6);
-        }
+        
 
         .banner{
                 background-position-x: 65%;
